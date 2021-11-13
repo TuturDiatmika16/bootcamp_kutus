@@ -11,6 +11,20 @@ class mProduksi extends Model
     protected $table = 'tb_produksi';
     protected $guarded = [];
 
+    protected $fillable = [
+        'urutan',
+        'id_lokasi',
+        'kode_produksi',
+        'tgl_mulai_produksi',
+        'tgl_selesai_produksi',
+        'catatan',
+        'status',
+        'status_finish_date',
+        'publish',
+        'publish_date',
+        'finish',
+    ];
+
     public function pejualan()
     {
         return $this->belongsTo(mPenjualan::class);
