@@ -9,7 +9,6 @@ class mLokasi extends Model
 {
     use HasFactory;
     protected $table = 'tb_lokasi';
-    protected $guarded = [];
     protected $fillable = [
         'kode_lokasi',
         'lokasi',

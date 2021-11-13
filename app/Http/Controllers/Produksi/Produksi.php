@@ -86,7 +86,7 @@ class Produksi extends Controller
         $data = [
             'lokasi' => $lokasi
         ];
-        return view('produksi.produksiCreate', $data);
+        return view('produksi.createProduksi', $data);
     }
 
     public function insert(Request $request)
